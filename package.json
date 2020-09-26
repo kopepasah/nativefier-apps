@@ -1,0 +1,21 @@
+{
+  "name": "nativefier-apps",
+  "version": "0.0.1",
+  "description": "Apps for various websites.",
+  "scripts": {
+    "build": "node build.js",
+    "sync": "rsync -av ./dist/ /Applications/Nativefier",
+    "clean": "rm -rf ./dist"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "native"
+  ],
+  "author": "Justin Kopepasah <justin@kopepasah.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "nativefier": "~10.1.0",
+    "rimraf": "^3.0.2"
+  }
+}
