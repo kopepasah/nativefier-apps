@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Apps for various websites.",
   "scripts": {
+    "all": "npm run build && npm run sync && npm run clean",
     "build": "node build.js",
     "sync": "rsync -av ./dist/ /Applications/Nativefier",
     "clean": "rm -rf ./dist"
